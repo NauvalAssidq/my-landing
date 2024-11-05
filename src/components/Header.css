@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20rem;
+  background-color: var(--light-background); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-shadow: var(--box-shadow-light);
+  backdrop-filter: var(--glass-blur);
+  z-index: 999;
+}
+
+.header.dark {
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+}
+
+.header.dark .logo h1 {
+  color: var(--dark-text-color);
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: inherit;
+  margin: 0;
+}
+
+.nav-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.burger-icon {
+  position: relative;
+  width: 30px; 
+  height: 3px; 
+  background-color: var(--light-text-color);
+  border-radius: 4px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: var(--light-text-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.burger-icon::before {
+  top: -8px;
+  left: 0px;
+}
+
+.burger-icon::after {
+  bottom: -8px;
+  left: 0px;
+}
+
+.burger-icon.open {
+  background-color: transparent;
+}
+
+.header.light .burger-icon {
+  background-color: var(--light-text-color);
+}
+
+.header.light .burger-icon::before,
+.header.light .burger-icon::after {
+  background-color: var(--light-text-color);
+}
+
+.header.dark .burger-icon {
+  background-color: var(--dark-text-color);
+}
+
+.header.dark .burger-icon::before,
+.header.dark .burger-icon::after {
+  background-color: var(--dark-text-color);
+}
+
+.header.light .burger-icon.open {
+  background-color: transparent;
+}
+
+.header.light .burger-icon.open::before {
+  transform: rotate(45deg); 
+  top: 0;
+}
+
+.header.light .burger-icon.open::after {
+  transform: rotate(-45deg); 
+  bottom: 0;
+}
+
+.header.dark .burger-icon.open {
+  background-color: transparent;
+}
+
+.header.dark .burger-icon.open::before {
+  transform: rotate(45deg); 
+  top: 0;
+}
+
+.header.dark .burger-icon.open::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav-toggle-button {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.nav-container.dark {
+  background-color: var(--dark-background);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav.dark {
+  background-color: transparent;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--link-color-light);
+}
+
+.nav-link.light {
+  color: var(--light-text-color); 
+}
+
+.nav-link.dark {
+  color: var(--dark-text-color); 
+}
+
+.toggle-button {
+  font-size: 1.5rem;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  color: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 720px) {
+  .header {
+    padding: 15px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle-button {
+    display: block;
+  }
+
+  .nav-container {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-container.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--dark-text-color);
+    z-index: 1000;
+    box-shadow: 0px 4px 10px var(--box-shadow-light);
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .nav.dark {
+    background-color: var(--dark-background);
+  }
+
+  .nav-link {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}

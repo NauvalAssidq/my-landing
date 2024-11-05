@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  /* Light Mode Colors */
+  --light-background: rgba(255, 255, 255, 0.8); /* Translucent white */
+  --light-text-color: #121212; /* Dark text */
+  --light-sidebar-bg: rgba(255, 255, 255, 0.85); /* Slightly opaque white */
+  --light-article-bg: rgba(255, 255, 255, 0.9); /* Semi-transparent background for articles */
+  --link-color-light: #007bff; /* Blue links in light mode */
+
+  /* Dark Mode Colors */
+  --dark-background: rgba(18, 18, 18, 0.85); /* Dark transparent background */
+  --dark-text-color: #f5f5f5; /* Light text */
+  --dark-sidebar-bg: rgba(51, 51, 51, 0.85); /* Dark sidebar background */
+  --dark-article-bg: rgba(44, 44, 44, 0.85); /* Dark article background */
+  --link-color-dark: #9c9c9c; /* Lighter link color in dark mode */
+
+  /* Glassmorphism Blur */
+  --glass-blur: blur(10px); /* Backdrop blur for glassmorphism effect */
+  --box-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --box-shadow-dark: 0 4px 12px rgba(255, 255, 255, 0.1);
+}

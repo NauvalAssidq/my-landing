@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: var(--light-background);
+  color: var(--light-text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+}
+
+.footer.dark {
+  background-color: var(--dark-background);
+  color: var(--dark-text-color);
+  box-shadow: var(--box-shadow-dark);
+  backdrop-filter: var(--glass-blur);
+}
