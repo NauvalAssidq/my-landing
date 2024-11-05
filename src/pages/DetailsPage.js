@@ -15,11 +15,10 @@ function DetailsPage() {
       <main className="details-main-content">
         <section className="details-content-section">
           <article className={`details-article ${darkMode ? 'dark' : 'light'}`}>
-            <h1>Website Competition</h1>
+            <h1>Arm Wrestling Competition</h1>
             <br />
             <p>
-              The Website Creation Competition is a dynamic event that challenges web designers, developers, and creatives to showcase their skills in building innovative and functional websites. Participants are encouraged to push the boundaries of design, user experience, and interactivity, while integrating the latest technologies and trends in web development. The competition not only tests technical expertise but also emphasizes creativity, aesthetic appeal, and the ability to craft a seamless user journey. Whether it’s a sleek business website, an engaging e-commerce platform, or a visually stunning portfolio, this competition celebrates the art and science of web creation. It's an opportunity to demonstrate how the web can be a powerful tool for communication, innovation, and creativity, and to be recognized for building the digital experiences of tomorrow. Tomrrow you will be the next people who gonna build the website.
-            </p>
+            Arm wrestling is a competitive sport that tests strength, technique, and endurance, pitting two opponents against each other in a contest of raw power. The goal is simple: force your opponent's hand and wrist to touch the surface, usually a table, with the arm locked in a specific position. While it may appear to be just about brute strength, arm wrestling also involves leverage, body mechanics, and strategy. Proper technique can often overcome pure muscle power, as skilled athletes know how to use their body to generate force and position their opponent for weakness. The sport is popular in many countries, with both professional competitions and casual matches held in various settings, from local bars to global tournaments. Arm wrestling has a unique appeal, blending athleticism with a personal challenge, where each match feels like a test of will and determination.            </p>
           </article>
         </section>
 

@@ -13,8 +13,8 @@ function HomePage() {
       
       <main className="main-content">
         <section className={`hero ${darkMode ? "dark" : "light"}`}>
-          <h2>Welcome to Our Landing Page, Developer!</h2>
-          <p>Let's build future website a good and safe site.</p>
+          <h2>Welcome to Our Arm Wrestling Sport Event</h2>
+          <p>Be Healthy Stay Positive, Strong Arm Strong Mind.</p>
           <button className="cta-button">Get Started</button>
         </section>
       </main>

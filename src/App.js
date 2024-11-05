@@ -7,7 +7,7 @@ import RegisterPage from './pages/RegisterPage';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />  
+      <Route path="/my-landing" element={<HomePage />} />  
       <Route path="/home" element={<HomePage />} />  
       <Route path="/details" element={<DetailsPage />} />
       <Route path="/register" element={<RegisterPage />} />

@@ -12,7 +12,7 @@ function Header({ darkMode, toggleDarkMode }) {
   return (
     <header className={`header ${darkMode ? "dark" : "light"}`}>
       <div className="logo">
-        <h1>WebinAja</h1>
+        <h1>ArmWrestler</h1>
       </div>
 
       <button className="nav-toggle-button" onClick={toggleNav}>

@@ -35,7 +35,7 @@ function RegisterPage() {
 
   return (
     <div className={`register-page ${darkMode ? 'dark' : 'light'}`}>
-      <h1>Register for the Website Creation Competition</h1>
+      <h1>Register for the Arm Wrestling Sport Competition</h1>
       <p>Please fill out the form to participate in the competition:</p>
 
       <form className={darkMode ? 'dark' : 'light'} onSubmit={handleSubmit}>

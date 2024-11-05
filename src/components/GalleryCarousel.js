@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './GalleryCarousel.css';
+import carouselImage1 from "./Images/carousel1.png";
+import carouselImage2 from "./Images/carousel2.png";
 
 function GalleryCarousel() {
   const images = [
-    '/Images/carousel1.png',
-    '/Images/carousel2.png',
+    carouselImage1, carouselImage2
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
